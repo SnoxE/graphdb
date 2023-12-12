@@ -1,0 +1,6 @@
+Baza będzie się zajmowała się przechowywaniem samochodów i ich właścicieli. Będzie można dodać/usunąc auto i policzyć ile aut ma właściciel.
+
+Węzeł Count - tworzy unikalne ID dla każdego węzła
+Węzeł Person - przedstawia właściciela
+Węzeł Car - przedstawia samochód
+Relacja OWNS - właściciel posiada samochód

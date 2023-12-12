@@ -1,16 +1,22 @@
 <template>
-  <SimpleGraph />
+  <div>
+    <ReserveForm />
+    <!-- <FrontPage />
+    <CarsPage /> -->
+  </div>
 </template>
 
 <script>
-// import VueGraph from '@/components/VueGraph.vue'
-import SimpleGraph from '@/components/SimpleGraph.vue'
+// import CarsPage from '@/components/CarsPage.vue'
+// import FrontPage from '@/components/FrontPage.vue'
+import ReserveForm from '@/components/ReserveForm.vue'
 
 export default {
   name: 'App',
   components: {
-    // VueGraph,
-    SimpleGraph
+    // CarsPage,
+    // FrontPage,
+    ReserveForm
   }
 }
 </script>

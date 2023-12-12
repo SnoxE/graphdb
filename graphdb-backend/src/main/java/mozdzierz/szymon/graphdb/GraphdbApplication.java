@@ -1,29 +1,27 @@
 package mozdzierz.szymon.graphdb;
 
-import org.neo4j.driver.Driver;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class GraphdbApplication implements CommandLineRunner {
-
-	@Autowired
-	Driver driver;
+public class GraphdbApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GraphdbApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		try (var session = driver.session()){
-			session.run("match (Person {name: 'Frans Doe'})-[:PARENT]->()-[:PARENT]->(child)\n" +
-					"return  DISTINCT child.name").list().forEach(record -> {
-				System.out.println(record.get("child.name"));
-			});
-		}
+	@Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer () {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**")
+						.allowedOrigins("http://localhost:5173")
+						.allowedMethods("GET", "POST", "PUT", "DELETE");
+			}
+		};
 	}
-
 }
