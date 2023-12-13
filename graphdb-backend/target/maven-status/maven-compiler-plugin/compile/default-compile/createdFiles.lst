@@ -1,0 +1,16 @@
+mozdzierz\szymon\graphdb\database\person\PersonDto.class
+mozdzierz\szymon\graphdb\database\person\PersonRepository.class
+mozdzierz\szymon\graphdb\database\person\PersonRepositoryImpl.class
+mozdzierz\szymon\graphdb\database\person\PersonDto$PersonDtoWithCarList.class
+mozdzierz\szymon\graphdb\database\car\Car.class
+mozdzierz\szymon\graphdb\service\CarService.class
+mozdzierz\szymon\graphdb\database\car\CarDto.class
+mozdzierz\szymon\graphdb\GraphdbApplication.class
+mozdzierz\szymon\graphdb\controller\PersonController.class
+mozdzierz\szymon\graphdb\common\ContentDto.class
+mozdzierz\szymon\graphdb\database\GraphRepository.class
+mozdzierz\szymon\graphdb\GraphdbApplication$1.class
+mozdzierz\szymon\graphdb\database\car\CarRepository.class
+mozdzierz\szymon\graphdb\database\person\Person.class
+mozdzierz\szymon\graphdb\service\PersonService.class
+mozdzierz\szymon\graphdb\common\ResponseDto.class
