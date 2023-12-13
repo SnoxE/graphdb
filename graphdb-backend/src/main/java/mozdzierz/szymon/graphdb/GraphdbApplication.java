@@ -19,7 +19,7 @@ public class GraphdbApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-						.allowedOrigins("http://localhost:5173", "https://graphdb-frontend.onrender.com/")
+						.allowedOrigins("http://localhost:5173", "https://graphdb-frontend.onrender.com")
 						.allowedMethods("GET", "POST", "PUT", "DELETE");
 			}
 		};
