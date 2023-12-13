@@ -32,8 +32,8 @@ public class PersonRepositoryImpl {
                         "MATCH (c:Count)\n" +
                         "WITH c.count AS newId\n" +
                         "match (xd:Person{id:" + userId + "})," +
-                        "(" + model.toLowerCase().trim() + ":Car {id: newId})\n" +
-                        "create (xd)-[:OWNS]->(" + model.toLowerCase().trim() + ")\n");
+                        "(" + "car" + ":Car {id: newId})\n" +
+                        "create (xd)-[:OWNS]->(" + "car" + ")\n");
             }
         }
     }
