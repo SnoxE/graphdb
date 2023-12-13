@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 import static mozdzierz.szymon.graphdb.database.person.PersonDto.PersonDtoWithCarList;
 
-import java.util.List;
-
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/person")
 public class PersonController {
 
