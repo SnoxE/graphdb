@@ -9,7 +9,6 @@ mozdzierz\szymon\graphdb\GraphdbApplication.class
 mozdzierz\szymon\graphdb\controller\PersonController.class
 mozdzierz\szymon\graphdb\common\ContentDto.class
 mozdzierz\szymon\graphdb\database\GraphRepository.class
-mozdzierz\szymon\graphdb\GraphdbApplication$1.class
 mozdzierz\szymon\graphdb\database\car\CarRepository.class
 mozdzierz\szymon\graphdb\database\person\Person.class
 mozdzierz\szymon\graphdb\service\PersonService.class
